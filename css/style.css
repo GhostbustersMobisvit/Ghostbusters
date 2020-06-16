@@ -1,0 +1,173 @@
+* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+}
+
+*,
+*:before,
+*:after {
+		box-sizing: border-box;
+}
+
+:focus,
+:active {
+		outline: none;
+}
+
+a:focus,
+a:active {
+		outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+		display: block;
+}
+
+html,
+body {
+		height: 100%;
+		width: 100%;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 14px;
+		-ms-text-size-adjust: 100%;
+		-moz-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+		font-family: inherit;
+}
+
+input::-ms-clear {
+		display: none;
+}
+
+button {
+		cursor: pointer;
+}
+
+button::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+}
+
+a,
+a:visited {
+		text-decoration: none;
+}
+
+a:hover {
+		text-decoration: none;
+}
+
+ul li {
+		list-style: none;
+}
+
+img {
+		vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+		font-size: inherit;
+		font-weight: inherit;
+}
+
+* {
+		font-family: "Roboto", sans-serif;
+}
+
+.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 104px;
+		padding: 0px 0px 0px 34px;
+		border-bottom: 1px solid #D4D4D4;
+}
+
+.logo {
+		margin: 0px 34px 0px 0px;
+}
+
+.line {
+		height: 100%;
+		border: 0.5px solid #D4D4D4;
+}
+
+.header-form {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 0px 34px;
+}
+
+.form-button {
+		margin: 0px 20px 0px 0px;
+		width: 16px;
+		height: 16px;
+		background: url(../img/search-icon.svg) center no-repeat;
+}
+
+.search-input {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 21px;
+		color: #A5A5A5;
+}
+
+.navigation {
+		margin: 0px 44px 0px auto;
+}
+
+.navigation-link {
+		margin: 0px 18px 0px 0px;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 21px;
+		color: #363636;
+}
+
+.button-group {
+		height: 100%;
+		font-size: 0;
+}
+
+.button {
+		height: 100%;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 21px;
+		color: #5671F6;
+		background: #fff;
+}
+.button:active {
+		background: #5671F6;
+		color: #FFFFFF;
+}
+.button:focus {
+		background: #5671F6;
+		color: #FFFFFF;
+}
+
+.sign-up {
+		padding: 0px 34px 0px 34px;
+		border-left: 1px solid #D4D4D4;
+}
+
+.login {
+		padding: 0px 50px 0px 50px;
+		border-left: 1px solid #D4D4D4;
+}
+/*# sourceMappingURL=style.css.map */
