@@ -105,15 +105,24 @@ h6 {
 
 
 
-.logo {
-   margin: 0px 34px 0px 0px;
-}
+.logo {}
 
-.line {
+.header-logo-link {
    height: 100%;
-   border: 0.5px solid #D4D4D4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
+   &:after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 1px;
+      background: #d4d4d4;
+      margin: 0px 0px 0px 34px;
+   }
 }
+
 
 .header-form {
    display: flex;
@@ -146,6 +155,10 @@ h6 {
    font-size: 18px;
    line-height: 21px;
    color: #363636;
+
+   &:hover {
+      color: #5671F6;
+   }
 }
 
 .button-group {
