@@ -7,30 +7,33 @@
    <title>Film.</title>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/swiper.min.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
 
    <header class="header">
       <a href="#" class="header-logo-link">
          <img width="68" src="img/logo.png" alt="logo.Film" class="logo">
       </a>
-      <form action="" class="header-form">
-         <button type="sumbit" class="form-button"></button>
-         <input type="text" class="search-input" placeholder="Поиск по фильмам...">
-      </form>
-      <!-- *NAV HEADER -->
-      <nav class="navigation">
-         <a href="#" class="navigation-link">Фильмы</a>
-         <a href="#" class="navigation-link">ТВ</a>
-         <a href="#" class="navigation-link">Новости</a>
-         <a href="#" class="navigation-link">О сервисе</a>
-      </nav>
-      <!--* NAV HEADER -->
-      <div class="button-group">
-         <button class="button sign-up cd-signin" href="#0">Регистрация</button>
-         <button class="button login cd-signup" href="#0">Войти</button>
+      <div class="m-menu">
+         <form action="" class="header-form">
+            <button type="sumbit" class="form-button"></button>
+            <input type="text" class="search-input" placeholder="Поиск по фильмам...">
+         </form>
+         <!-- *NAV HEADER -->
+         <nav class="navigation">
+            <a href="#" class="navigation-link">Фильмы</a>
+            <a href="#" class="navigation-link">ТВ</a>
+            <a href="#" class="navigation-link">Новости</a>
+            <a href="#" class="navigation-link">О сервисе</a>
+         </nav>
+         <!--* NAV HEADER -->
+         <div class="button-group">
+            <button class="button sign-up cd-signin register" href="#0">Регистрация</button>
+            <button class="button login cd-signup register" id="login" href="#0">Войти</button>
+         </div>
       </div>
       <div class="mobile-buttons">
          <button class="m-search-button">
@@ -45,6 +48,31 @@
 
    </header>
    <!-- */ header -->
+
+
+   <!-- !modal -->
+
+   <div class="modal modal-login">
+      <a href="#" class="close"><img width="40px" src="img/icon-closed-modal.svg" alt="" class="closed-modal "></a>
+      <div class="modal-wrapper">
+         <div class="modal-header">
+            <span class="sign-in">SignIn</span>
+         </div>
+         <div class="modal-section">
+            <form class="modal-form" action="">
+               <input class="email modal-input" type="email" placeholder="Email">
+               <input class="password modal-input" type="password" placeholder="password">
+               <button class="modal-button" type="submit">Войти</button>
+            </form>
+
+         </div>
+         <div class="modal-footer">
+            <a href="#" class="forgot-password"> Forgot your password?</a>
+         </div>
+      </div>
+   </div>
+
+   <!-- !modal -->
 
    <section class="film">
       <div class="container">
@@ -124,10 +152,10 @@
    <section class="cast">
       <div class="container">
          <div class="tabs">
-            <h2 class="section-title active">Актеры</h2>
-            <h2 class="section-title">Создатели</h2>
+            <h2 class="tab section-title " data-target="#actors">Актеры</h2>
+            <h2 class="tab section-title" data-target="#creators">Создатели</h2>
          </div>
-         <div class="tabs-content">
+         <div class="tabs-content" id="actors">
             <div class="card">
                <img src="img/actors/1.png" alt="Кэрри Кун" class="card-image">
                <div class="card-text">
@@ -194,6 +222,58 @@
             <!-- CARD -->
          </div>
          <!-- /.tabs-content -->
+         <div class="tabs-content" id="creators">
+            <div class="card">
+               <img src="img/creators/creators2.jpg" alt="Jason Reitman" class="card-image">
+               <div class="card-text">
+                  <h3 class="name">Джейсон Райтман </h3>
+                  <span class="en-name">Jason Reitman</span>
+               </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+               <img src="img/creators/creators1.jpg" alt="Harold Ramis" class="card-image">
+               <div class="card-text">
+                  <h3 class="name">Харольд Рэмис</h3>
+                  <span class="en-name">Harold Ramis</span>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/creators/creators3.jpg" alt="Eric Steelberg" class="card-image">
+               <div class="card-text">
+                  <h3 class="name">Эрик Стилберг</h3>
+                  <span class="en-name">Eric Steelberg</span>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/creators/creators4.jpg" alt="Dan Aykroyd" class="card-image">
+               <div class="card-text">
+                  <h3 class="name">Дэн Эйкройд</h3>
+                  <span class="en-name">Dan Aykroyd</span>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/creators/creators5.jpg" alt="Michael Beugg" class="card-image">
+               <div class="card-text">
+                  <h3 class="name">Майкл Бегг</h3>
+                  <span class="en-name">Michael Beugg</span>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/creators/creators6.jpg" alt="Jason Cloth" class="card-image">
+               <div class="card-text">
+                  <h3 class="name">Джейсон Клот </h3>
+                  <span class="en-name">Jason Cloth</span>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/creators/creators7.jpg" alt="Gil Kenan" class="card-image">
+               <div class="card-text">
+                  <h3 class="name">Гил Кинан </h3>
+                  <span class="en-name">Gil Kenan</span>
+               </div>
+            </div>
+         </div>
       </div>
       <!-- /.container -->
    </section>
@@ -203,24 +283,48 @@
    <section class="news">
       <div class="container">
          <h2 class="section-news-title">Новости по теме</h2>
-         <div class="news-cards">
-            <div class="news-card">
-               <spane class="date">31 марта 2020</spane>
-               <h3 class="news-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
+         <!-- Slider main container -->
+         <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide">
+                  <div class="news-card">
+                     <spane class="date">31 марта 2020</spane>
+                     <h3 class="news-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
+                  </div>
+                  <!--*news-card -->
+               </div>
+               <!-- *slide -->
+               <div class="swiper-slide">
+                  <div class="news-card">
+                     <spane class="date">9 декабря 2019</spane>
+                     <h3 class="news-title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
+                  </div>
+                  <!--*news-card -->
+               </div>
+               <!-- *slide -->
+               <div class="swiper-slide">
+                  <div class="news-card">
+                     <spane class="date">11 ноября 2019</spane>
+                     <h3 class="news-title">Новые «Охотники за привидениями» обзавелись названием</h3>
+                  </div>
+                  <!--*news-card -->
+               </div>
+               <!-- *slide -->
+               <div class="swiper-slide">
+                  <div class="news-card">
+                     <spane class="date">19 октября 2019</spane>
+                     <h3 class="news-title">Завершились съёмки новых «Охотников за привидениями»
+                     </h3>
+                  </div>
+                  <!--*news-card -->
+               </div>
+               <!-- *slide -->
             </div>
-            <div class="news-card">
-               <spane class="date">9 декабря 2019</spane>
-               <h3 class="news-title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
-            </div>
-            <div class="news-card">
-               <spane class="date">11 ноября 2019</spane>
-               <h3 class="news-title">Новые «Охотники за привидениями» обзавелись названием</h3>
-            </div>
-            <div class="news-card">
-               <spane class="date">19 октября 2019</spane>
-               <h3 class="news-title">Завершились съёмки новых «Охотников за привидениями»
-               </h3>
-            </div>
+            <button class="button-next">
+               <img src="img/arrow.svg" alt="">
+            </button>
          </div>
       </div>
    </section>
@@ -231,6 +335,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
    <!-- *подключаем fancyBox -->
+   <script src="js/swiper.min.js"></script>
    <script src="js/main.js"></script>
 
 </body>
